@@ -18,6 +18,8 @@ public class T1 {
 		driver.manage().window().maximize();
 		driver.get("https://www.nopcommerce.com/");
 		driver.findElement(By.xpath("//ul[@class='header-links-account']//a[@class='ico-register'][contains(text(),'Register')]")).click();
+		driver.findElement(By.xpath("//input[@id='ctl00_ctl00_cph1_cph1_ctrlCustomerRegister_CreateUserForm_CreateUserStepContainer_txtFirstName']")).sendKeys("Abhishek");
+		
 	}
 
 }
